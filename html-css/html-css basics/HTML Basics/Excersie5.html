@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+</head>
+
+<body>
+    <h1>Contact US</h1>
+    <form action="">
+        <fieldset>
+            <legend>Personal information</legend>
+            <label for="name">Name:</label>
+            <input id="name" type="text" placeholder="Your Name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="your@email.com" required>
+            <br>
+            <label for="phone">Phone:</label>
+            <input id="phone" type="tel" placeholder="(555) 123-4567" required>
+        </fieldset>
+        <fieldset>
+            <legend>Message Details</legend>
+            <label for="subject">Subject:</label>
+            <select id="subject">
+                <option value="" disabled selected>Select subject</option>
+                <option value="one">one</option>
+                <option value="two">two</option>
+                <option value="three">three</option>
+            </select>
+            <br>
+            <label for="priority">Priority:</label>
+            <br>
+            <input type="radio" name="priority" id="priority1">
+            <label for="priority1">Low</label>
+            <input type="radio" name="priority" id="priority2">
+            <label for="priority2">Medium</label>
+            <input type="radio" name="priority" id="priority3">
+            <label for="priority3">High</label>
+            <br>
+            <label for="message">Message:</label>
+            <br>
+            <textarea id="message" name="message" placeholder="Your message..."></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Preferences</legend>
+            <input type="checkbox" id="checkBox">
+            <label for="checkBox">Subscribe to newsletter</label>
+            <br>
+            <label for="contactMethod">Contact Method:</label>
+            <select id="contactMethod">
+                <option value="Email">Email</option>
+                <option value="SMS">SMS</option>
+                <option value="WhatsApp">WhatsApp</option>
+            </select>
+        </fieldset>
+        <button type="submit">Send Message</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+
+</body>
+
+</html>

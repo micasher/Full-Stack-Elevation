@@ -1,0 +1,23 @@
+/*Exercise 1*/
+
+body {
+    background: #ddd;
+}
+
+/*Exercise 2*/
+
+nav {
+    background: rgb(51, 51, 51);
+}
+
+/*Exercise 3*/
+
+.hero-image {
+    width: 100%;
+}
+
+/*Exercise 4*/
+
+li:first-child {
+    background: green;
+}

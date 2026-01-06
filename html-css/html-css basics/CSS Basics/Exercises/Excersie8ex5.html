@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8 Ex5</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fb;
+            margin: 40px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4a90e2;
+            margin-bottom: 30px;
+        }
+
+        form {
+            background-color: white;
+            padding: 30px;
+            width: 500px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        fieldset {
+            border: 2px solid #4a90e2;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        legend {
+            color: #4a90e2;
+            font-weight: bold;
+            padding: 0 10px;
+        }
+
+        label {
+            display: inline-block;
+            width: 120px;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            padding: 6px;
+            width: 250px;
+            margin-bottom: 10px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            width: 350px;
+            height: 80px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button[type="submit"] {
+            background-color: #5cb85c;
+            color: white;
+            margin-right: 10px;
+        }
+
+        button[type="reset"] {
+            background-color: #d9534f;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Contact Us</h1>
+
+    <form action="">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">Name:</label>
+            <input id="name" type="text" placeholder="Your Name" required><br>
+
+            <label for="email">Email:</label>
+            <input id="email" type="email" placeholder="your@email.com" required><br>
+
+            <label for="phone">Phone:</label>
+            <input id="phone" type="tel" placeholder="(555) 123-4567" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Message Details</legend>
+
+            <label for="subject">Subject:</label>
+            <select id="subject">
+                <option value="" disabled selected>Select subject</option>
+                <option value="one">one</option>
+                <option value="two">two</option>
+                <option value="three">three</option>
+            </select><br>
+
+            <label>Priority:</label><br>
+            <input type="radio" name="priority" id="priority1">
+            <label for="priority1">Low</label>
+
+            <input type="radio" name="priority" id="priority2">
+            <label for="priority2">Medium</label>
+
+            <input type="radio" name="priority" id="priority3">
+            <label for="priority3">High</label><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" placeholder="Your message..."></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <input type="checkbox" id="checkBox">
+            <label for="checkBox">Subscribe to newsletter</label><br><br>
+
+            <label for="contactMethod">Contact Method:</label>
+            <select id="contactMethod">
+                <option value="Email">Email</option>
+                <option value="SMS">SMS</option>
+                <option value="WhatsApp">WhatsApp</option>
+            </select>
+        </fieldset>
+
+        <button type="submit">Send Message</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+
+</html>
